@@ -112,3 +112,21 @@ for index, my_int in enumerate(my_list):
         new_list.append(my_int)
 print(len(new_list))
 
+
+
+
+
+# my_str_1 = "telephone"
+# my_str_2 = "elephant"
+# result_1 = []
+# result_2 = []
+# new_list = []
+# for value in my_str_1:
+#     if my_str_1.count(value) == 1:
+#         result_1.append(value)
+# for value in my_str_2:
+#     if my_str_2.count(value) == 1:
+#         result_2.append(value)
+# result_set = [x for x in result_1 if x in result_2]
+# new_list.extend(result_set)
+# print(new_list)
