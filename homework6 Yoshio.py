@@ -41,9 +41,10 @@ print(new_list)
 
 ####### homework 06-5) <<< Йосио
 
-my_str = 'telephone'
+my_str = 'AAAAAAAAAAAAAAAAAAAAAAAabbc'
+new_set = set(my_str)
 new_list = []
-for value in my_str:
+for value in new_set:
     if my_str.count(value) == 1:
         new_list.append(value)
 print(new_list)
@@ -63,13 +64,15 @@ print(new_list)
 
 ####### homework 06-7) <<< Йосио
 
-my_str_1 = "telephone"
-my_str_2 = "elephant"
+my_str_1 = "AAAAAAAAAAAAAAAAAAAAAAAAbBB"
+my_str_2 = "bBBCCCCCCCCCCCCCCCCCCCCCCCC"
+new_set_1 = set(my_str_1)
+new_set_2 = set(my_str_2)
+intersection = new_set_1.intersection(new_set_2)
 new_list = []
-for value_1 in my_str_1:
-    for value_2 in my_str_2:
-        if my_str_1.count(value_1) == my_str_2.count(value_2) == 1 and value_1 == value_2:
-            new_list.append(value_1)
+for value in intersection:
+    if my_str_1.count(value) == my_str_2.count(value) == 1:
+        new_list.append(value)
 print(new_list)
 
 
