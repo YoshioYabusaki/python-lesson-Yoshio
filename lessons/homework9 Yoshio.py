@@ -35,9 +35,9 @@ def a_good_dict(num_keys):
         for index in my_dict:
             if value == ['a']:
                 my_dict[index] = randint(-100, 100)
-            if value == ['b']:
+            elif value == ['b']:
                 my_dict[index] = uniform(0, 1)
-            if value == ['c']:
+            else:
                 my_dict[index] = bool(randint(0, 1))
             new_dict.update(my_dict)
             num = num + 1
