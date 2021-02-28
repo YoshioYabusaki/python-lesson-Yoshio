@@ -25,22 +25,20 @@ print(the_name_list)
 ####### homework 09-2) <<< Йосио
 
 def a_good_dict(num_keys):
-    num = 0
     new_dict = {}
-    while num < num_keys:
+    for i in range(num_keys):
         key = "".join(choice(string.ascii_lowercase) for i in range(5))
-        value = choices(['a', 'b', 'c'])
+        value = choices([int, float, bool])
         my_dict = {key: value}
 
         for index in my_dict:
-            if value == ['a']:
+            if value == [int]:
                 my_dict[index] = randint(-100, 100)
-            if value == ['b']:
+            elif value == [float]:
                 my_dict[index] = uniform(0, 1)
-            if value == ['c']:
+            else:
                 my_dict[index] = bool(randint(0, 1))
             new_dict.update(my_dict)
-            num = num + 1
     return new_dict
 
 print(a_good_dict(randint(5, 20)))
