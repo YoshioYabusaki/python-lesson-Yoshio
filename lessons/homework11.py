@@ -39,7 +39,7 @@ print(result)
 
 def length_of_text(sort_dict):
     the_text = sort_dict["text"]
-    return len(the_text)
+    return len(the_text.split())
 
 result = sorted(read_file(file_name), key=length_of_text)
 print(result)

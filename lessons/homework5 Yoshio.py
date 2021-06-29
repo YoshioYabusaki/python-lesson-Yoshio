@@ -94,7 +94,8 @@ sub_str = my_str[my_str.find(l_limit) + 1:my_str.find(r_limit)]
 print(sub_str)
 
 
-####### homework 05-9) <<< Йосио
+
+
 
 my_str = "their_guitars"
 l_limit = "h"

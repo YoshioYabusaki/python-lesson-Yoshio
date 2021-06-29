@@ -7,6 +7,7 @@
 # Author, Quote, URL. Если автор не указан, цитату не брать.
 # Перед сохранением в csv, записи отсортировать по автору (в алфавитном порядке).
 import requests
+import json
 import csv
 
 def how_many_quotations(the_order):
@@ -41,6 +42,57 @@ def write_file(file_path, the_data):
         writer.writerow(the_data)
 
 write_file("Homework12_file.csv", read_quote)
+
+
+# def get_quote(the_url):
+#     params = {"method": "getQuote",
+#               "format": "json",
+#               "key": 1,
+#               "lang": "ru"}
+#     responce = requests.get(the_url, params=params)
+#     the_data = responce.json()
+#     return the_data
+#
+# the_url = "http://api.forismatic.com/api/1.0/"
+# the_quote = get_quote(the_url)
+# print(the_quote)
+#
+# how_many = 5
+# the_goal = []
+# num = 0
+# while num < how_many:
+#     the_goal.append(the_quote)
+#     num = num + 1
+# print(the_goal)
+
+
+
+# def how_many_quotations(the_order):
+#
+#     for number in range(the_order):
+#
+#
+#         the_data.pop('senderName')
+#         the_data.pop('senderLink')
+#         the_data['Author'] = the_data['quoteAuthor']
+#         del the_data['quoteAuthor']
+#         the_data['Quote'] = the_data['quoteText']
+#         del the_data['quoteText']
+#         the_data['URL'] = the_data['quoteLink']
+#         del the_data['quoteLink']
+#         if the_data['Author'] != "":
+#             return the_data
+
+# read_quote = how_many_quotations(5)
+# print(read_quote)
+
+# def write_file(file_path, the_goal):
+#     with open(file_path, "w", newline='') as the_file:
+#         writer = csv.DictWriter(the_file, fieldnames=['Author', 'Quote', 'URL'])
+#         writer.writeheader()
+#         writer.writerow(the_goal)
+#
+# write_file("Homework12_file.csv", the_goal)
 
 
 # 2. Дан файл authors.txt

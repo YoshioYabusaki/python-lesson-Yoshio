@@ -36,7 +36,7 @@ json_data = {"Ukraine": 111222333000,
              'Japan': 777888999000}
 str_data = 'You will find your guitar.'
 
-the_data = json_data  # <---Выбор данных
+the_data = csv_data  # <---Выбор данных
 
 if the_data == txt_data:
     file_path = "New_Homework_txt.txt"
